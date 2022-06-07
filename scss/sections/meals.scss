@@ -1,0 +1,134 @@
+.section-meals {
+    padding: 9.6rem 0;
+}
+
+.meal{
+    box-shadow: 0 2.4rem 4.8rem rgba($color: #000000, $alpha: 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.meal:hover{
+    box-shadow: 0 3.2rem 6.4rem rgba($color: #000000, $alpha: 0.06);
+    transform: translateY(-1rem);
+}
+
+.meal-content{
+    padding: 4.8rem;
+    padding-top: 3.2rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 2.4rem 3.2rem 3.2rem;
+      }
+}
+
+.meal-tags{
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag{
+    display: inline-block;
+    padding: .4rem .8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    color: $color-grey-2;
+    border-radius: 50px;
+    font-weight: 700;
+
+    &--vegetarian{
+        background-color: #51cf66;
+    }
+
+    &--vegan{
+        background-color: #94d82d;
+    }
+
+    &--paleo{
+        background-color: #ffd43b;
+    }
+}
+
+.meal-title{
+   font-size: 2.4rem; 
+   color: $color-grey-2;
+   font-weight: 600;
+   margin-bottom: 3.2rem;
+}
+
+.meal-attributes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-attribute{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+
+
+.meal-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+    color: $color-primary;
+}
+
+.meal-img{
+    width: 100%;
+}
+
+.all-recipies{
+    text-align: center;
+    font-size: 1.8rem;    
+}
+
+.link:link, 
+.link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-primary;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+}
+
+.link:hover{
+    color: $color-primary-hover;
+    border-bottom: 1px solid transparent;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon{
+    width: 3rem;
+    height: 3rem;
+    color: $color-primary;
+}
+
+.diets {
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    
+}
